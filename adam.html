@@ -1,17 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="oldalalakítás" />
+    <meta name="keywords" content="szemantikus elemek" />
+    <meta name="author" content="Béldy Ádám" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyári munka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+        <header><h1>Gyári munka</h1></header>
+      <nav>
         <ul>
-            <li><a href="index.html">Kezdőlap</a></li>
-            <li><a href="adam.html">helo</a></li>
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="adam.html">Másik oldal</a></li>
         </ul>
-    </nav>
-    <p>DR KÖCSÖG</p>
-</body>
+      </nav>
+      <article>
+        <div class="jelentkezes">
+        <form>
+            <h2>Jelentkezés</h2>
+            <label for="felhasznalonev">Felhasználónév:</label>
+            <input type="text" id="felhasznalonev" name="felhasznalonev" placeholder="Kiss Lajos" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="valaki@valami.hu" required><br>  
+            <label for="jelszo">Jelszó:</label>
+            <input type="password" id="jelszo" name="jelszo" placeholder="12345" required><br>
+        </form>
+        </div>
+        <hr>
+        
+        <div class="kerdoiv">
+        <form>
+            <h2>Kérem töltse ki az űrlapot:</h2>
+            <label for="checkboxGombb1"></label>
+                <input type="checkbox" id="checkboxGombb1" name="checkboxGombb1"> Volt e korábban ilyen versenyképes fizetése?
+            <br>
+            <label for="checkboxGombb2"></label>
+                <input type="checkbox" id="checkboxGombb2" name="checkboxGombb2"> Volt-e már lesérülve munkátol?
+            <br>
+            <label for="checkboxGombb3"></label>
+                <input type="checkbox" id="checkboxGombb3" name="checkboxGombb3"> Szokott-e munka közben kóklerkedni?
+            <br>
+            <h2>Mennyire lenne elégedett a minimálbérrel?</h2>
+            <label for="radioGombb1"></label>
+                <input type="radio" id="radioGombb1" name="radioGombb" value="radioGombb1"> Nagyon
+            <br>
+            <label for="radioGombb2"></label>
+                <input type="radio" id="radioGombb2" name="radioGombb" value="radioGombb2"> Eléggé
+            <br>
+            <label for="radioGombb3"></label>
+                <input type="radio" id="radioGombb3" name="radioGombb" value="radioGombb3"> Tökéletesen
+            <br>
+
+            <hr>
+    
+            <label for="text1">Egyéb megjegyzést kérem fogalmazza meg ide:</label>
+            <div class="kerdes">
+                <textarea name="comment" id="text1" form="usrform" placeholder="Ide írjon"></textarea>
+            </div>   
+            <button id="adamGombb" type="submit"><a href="index.html">Küldés</a></button><br>
+        </form>
+    </div>
+      </article>
+      <aside></aside>
+      <footer>Béldy Ádám - Ewemor Martin</footer>
+    </main>
+  </body>
 </html>
